@@ -52,3 +52,6 @@ app.delete("/cache/:key", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// Exporting the handler function for Vercel serverless
+module.exports = app;
